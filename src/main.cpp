@@ -11,7 +11,7 @@ class MyAdvertisedDeviceCallbacks : public BLEAdvertisedDeviceCallbacks
     {
         String address = advertisedDevice.getAddress().toString().c_str();
 
-        if (address.equalsIgnoreCase("23:08:07:10:1B:49"))
+        if (address.equalsIgnoreCase("Your MAC ID"))
         {
             Serial.print("Fire-Boltt 130 RSSI: ");
             Serial.print(advertisedDevice.getRSSI());
